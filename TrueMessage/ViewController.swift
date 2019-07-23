@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var messagetableview: UITableViewCell!
+    
+    @IBOutlet weak var profilepicture: UIImageView!
+    
+    @IBOutlet weak var profilename: UILabel!
+    
+    @IBOutlet weak var lastmessage: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
