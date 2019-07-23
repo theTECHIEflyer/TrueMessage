@@ -8,6 +8,17 @@
 
 import UIKit
 
+class messagescell: UITableViewCell {
+    
+    @IBOutlet weak var messagedynamiccell: UIView!
+    
+    @IBOutlet weak var profilename: UILabel!
+    
+    @IBOutlet weak var lastmessage: UIView!
+    
+}
+
+
 class MessagesTableViewController: UITableViewController {
     
     
@@ -20,7 +31,6 @@ class MessagesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0

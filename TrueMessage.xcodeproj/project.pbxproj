@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B1E63E322E77400002351E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E63E222E77400002351E7 /* AppDelegate.swift */; };
-		3B1E63E522E77400002351E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E63E422E77400002351E7 /* ViewController.swift */; };
 		3B1E63E822E77400002351E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E63E622E77400002351E7 /* Main.storyboard */; };
 		3B1E63EA22E77404002351E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E63E922E77404002351E7 /* Assets.xcassets */; };
 		3B1E63ED22E77404002351E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E63EB22E77404002351E7 /* LaunchScreen.storyboard */; };
 		3B1E63F822E77404002351E7 /* TrueMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E63F722E77404002351E7 /* TrueMessageTests.swift */; };
 		3B1E640322E77404002351E7 /* TrueMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E640222E77404002351E7 /* TrueMessageUITests.swift */; };
+		3B8B562E22E7AB6F00F833A6 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B562D22E7AB6F00F833A6 /* MessagesTableViewController.swift */; };
+		3B8B563022E7AB7100F833A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B562F22E7AB7100F833A6 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3B1E63DF22E77400002351E7 /* TrueMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1E63E222E77400002351E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B1E63E422E77400002351E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B1E63E722E77400002351E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B1E63E922E77404002351E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1E63EC22E77404002351E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		3B1E63FE22E77404002351E7 /* TrueMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1E640222E77404002351E7 /* TrueMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueMessageUITests.swift; sourceTree = "<group>"; };
 		3B1E640422E77404002351E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8B562D22E7AB6F00F833A6 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		3B8B562F22E7AB7100F833A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,6 @@
 				3B1E63E122E77400002351E7 /* TrueMessage */,
 				3B1E63F622E77404002351E7 /* TrueMessageTests */,
 				3B1E640122E77404002351E7 /* TrueMessageUITests */,
-				3B1E63E022E77400002351E7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,14 +93,16 @@
 				3B1E63FE22E77404002351E7 /* TrueMessageUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3B1E63E122E77400002351E7 /* TrueMessage */ = {
 			isa = PBXGroup;
 			children = (
 				3B1E63E222E77400002351E7 /* AppDelegate.swift */,
-				3B1E63E422E77400002351E7 /* ViewController.swift */,
 				3B1E63E622E77400002351E7 /* Main.storyboard */,
+				3B8B562D22E7AB6F00F833A6 /* MessagesTableViewController.swift */,
+				3B8B562F22E7AB7100F833A6 /* ViewController.swift */,
 				3B1E63E922E77404002351E7 /* Assets.xcassets */,
 				3B1E63EB22E77404002351E7 /* LaunchScreen.storyboard */,
 				3B1E63EE22E77404002351E7 /* Info.plist */,
@@ -119,6 +122,7 @@
 		3B1E640122E77404002351E7 /* TrueMessageUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3B1E63E022E77400002351E7 /* Products */,
 				3B1E640222E77404002351E7 /* TrueMessageUITests.swift */,
 				3B1E640422E77404002351E7 /* Info.plist */,
 			);
@@ -256,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1E63E522E77400002351E7 /* ViewController.swift in Sources */,
+				3B8B563022E7AB7100F833A6 /* ViewController.swift in Sources */,
 				3B1E63E322E77400002351E7 /* AppDelegate.swift in Sources */,
+				3B8B562E22E7AB6F00F833A6 /* MessagesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
